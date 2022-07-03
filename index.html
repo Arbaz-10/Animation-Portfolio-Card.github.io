@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sliding card UI Design</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="card">
+        <div class="contentBox">
+            <div class="content">
+                <h2>Ben Knappen <br> <span>Creative Designer</span> </h2>
+                <div class="imgBox">
+                    <img src="https://th.bing.com/th/id/OIP.IrUBHhdMo6wWLFueKNreRwHaHa?pid=ImgDet&rs=1" alt="" srcset="">
+                </div>
+                <button>Hire Me</button>
+            </div>
+        </div>
+        <div class="toggle">
+            <span></span>
+        </div>
+    </div>
+    <script>
+        let card = document.querySelector('.card');
+        let cardtoggle = document.querySelector('.toggle');
+        cardtoggle.onclick = function(){
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
